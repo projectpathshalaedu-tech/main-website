@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechHelper Services</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c') no-repeat center center/cover;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: rgba(0, 0, 0, 0);
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: white;
+    }
+
+    header nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color:black;
+      font-weight: bold;
+    }
+
+    header .btn {
+      background: #2563eb;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    /* Services Section */
+    .services {
+      text-align: center;
+      padding: 50px 20px;
+      background: rgba(255, 255, 255, 0.9);
+    }
+
+    .services h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .services p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    /* Cards Grid */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: left;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .card .icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+      display: block;
+      text-align: center;
+    }
+
+    .card ul {
+      padding-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    .card .price {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .card button {
+      background: #2563eb;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      float: right;
+    }
+
+    /* Card Colors */
+    .blue { border-left: 5px solid #3b82f6; }
+    .green { border-left: 5px solid #10b981; }
+    .purple { border-left: 5px solid #8b5cf6; }
+    .orange { border-left: 5px solid #f97316; }
+    .pink { border-left: 5px solid #ec4899; }
+    .red { border-left: 5px solid #ef4444; }
+    .teal { border-left: 5px solid #14b8a6; }
+    .yellow { border-left: 5px solid #facc15; }
+
+    
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f4f6f9;
+    }
+
+    footer {
+      background-color: #0d1b2a; /* Professional Dark Navy */
+      color: #cfd8dc;
+      padding: 40px 80px;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Left side */
+    .footer-logo h2 {
+      font-family: "Pacifico", cursive;
+      font-size: 28px;
+      color: #4dabf7;
+      margin: 0;
+    }
+
+    .footer-logo p {
+      margin: 15px 0;
+      color: #b0bec5;
+      line-height: 1.6;
+      max-width: 350px;
+    }
+
+    .social-icons {
+      margin-top: 15px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 12px;
+      background: #1b263b;
+      color: #cfd8dc;
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      transition: 0.3s ease;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      background: #4dabf7;
+      color: #fff;
+    }
+
+    /* Right side links */
+    .footer-links h3 {
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links ul li {
+      margin: 8px 0;
+    }
+
+    .footer-links ul li a {
+      text-decoration: none;
+      color: #b0bec5;
+      transition: 0.3s ease;
+    }
+
+    .footer-links ul li a:hover {
+      color: #4dabf7;
+    }
+
+    /* Bottom bar */
+    .footer-bottom {
+      border-top: 1px solid #263238;
+      text-align: center;
+      padding: 20px 0 0;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #90a4ae;
+    }
+
+    .footer-bottom a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #90a4ae;
+      transition: 0.3s ease;
+    }
+
+    .footer-bottom a:hover {
+      color: #4dabf7;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div>
+      <span style="font-size:22px;"><img src="images/Main File (LOGO)-01 copy.jpg" alt="Logo" height="70px" width="250px"></span>
+    </div>
+    <nav>
+      <a href="Homepage.html">Home</a>
+      <a href="#">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="Team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="#" class="btn">Get Help</a>
+  </header>
+
+  <!-- Services -->
+  <section class="services">
+    <h1>Our Services</h1>
+    <p>Comprehensive IT project assistance designed to help students excel in their academic journey.<br>
+    Choose from our range of specialized services tailored to your needs.</p>
+
+    <div class="card-container">
+      
+      <!-- Card 1 -->
+      <div class="card blue">
+        <span class="icon">💻</span>
+        <h2>Web Development</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React, Angular, Vue.js</li>
+          <li>Node.js, Express</li>
+          <li>Database Integration</li>
+        </ul>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card green">
+        <span class="icon">📱</span>
+        <h2>Mobile App Development</h2>
+        <ul>
+          <li>Android & iOS Apps</li>
+          <li>React Native</li>
+          <li>Flutter Development</li>
+          <li>App Store Deployment</li>
+        </ul>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card purple">
+        <span class="icon">🎨</span>
+        <h2>UI/UX Design</h2>
+        <ul>
+          <li>Figma & Adobe XD</li>
+          <li>Wireframes & Prototypes</li>
+          <li>Responsive Design</li>
+        </ul>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card orange">
+        <span class="icon">☁️</span>
+        <h2>Cloud Solutions</h2>
+        <ul>
+          <li>AWS, Azure, Google Cloud</li>
+          <li>Deployment & Hosting</li>
+          <li>Serverless Functions</li>
+        </ul>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card pink">
+        <span class="icon">🛡️</span>
+        <h2>Cybersecurity</h2>
+        <ul>
+          <li>Penetration Testing</li>
+          <li>Vulnerability Scanning</li>
+          <li>Secure Code Review</li>
+        </ul>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card red">
+        <span class="icon">🤖</span>
+        <h2>AI & ML Projects</h2>
+        <ul>
+          <li>Machine Learning Models</li>
+          <li>Deep Learning</li>
+          <li>Data Analysis</li>
+        </ul>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="card teal">
+        <span class="icon">🛒</span>
+        <h2>E-Commerce Solutions</h2>
+        <ul>
+          <li>Shopify, WooCommerce</li>
+          <li>Custom Platforms</li>
+          <li>Payment Integration</li>
+        </ul>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="card yellow">
+        <span class="icon">📊</span>
+        <h2>Data Analytics</h2>
+        <ul>
+          <li>Power BI, Tableau</li>
+          <li>Business Dashboards</li>
+          <li>Predictive Analytics</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Choose Our Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+
+    .services-section {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .services-section h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #0d1b2a;
+      margin-bottom: 10px;
+    }
+
+    .services-section p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .services-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .service-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .icon-circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px auto;
+      font-size: 28px;
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover .icon-circle {
+      transform: scale(1.1);
+    }
+
+    .icon-blue {
+      background: #e6f0ff;
+      color: #007bff;
+    }
+
+    .icon-green {
+      background: #e6ffe6;
+      color: #28a745;
+    }
+
+    .icon-purple {
+      background: #f3e6ff;
+      color: #6f42c1;
+    }
+
+    .service-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #0d1b2a;
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .services-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="services-section">
+    <h2>Why Choose Our Services?</h2>
+    <p>We're committed to delivering excellence in every project while helping you learn and grow</p>
+
+    <div class="services-container">
+      <!-- Card 1 -->
+      <div class="service-card">
+        <div class="icon-circle icon-blue">🏅</div>
+        <h3>Quality Guaranteed</h3>
+        <p>Projects thoroughly tested and reviewed to ensure the highest quality standards and academic requirements are met.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-card">
+        <div class="icon-circle icon-green">⏰</div>
+        <h3>On-Time Delivery</h3>
+        <p>We understand the importance of deadlines. All projects are delivered on time with regular progress updates throughout.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-card">
+        <div class="icon-circle icon-purple">🎧</div>
+        <h3>24/7 Support</h3>
+        <p>Get help whenever you need it. Our support team is available around the clock to answer questions and provide assistance.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Optional JS for icon animation effect
+    const icons = document.querySelectorAll(".icon-circle");
+    icons.forEach(icon => {
+      icon.addEventListener("mouseenter", () => {
+        icon.style.transform = "rotate(10deg) scale(1.2)";
+      });
+      icon.addEventListener("mouseleave", () => {
+        icon.style.transform = "rotate(0deg) scale(1)";
+      });
+    });
+  </script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Example</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+    }
+
+      /* Footer Styling */
+    footer {
+      background-color: #0b1623; /* professional dark navy */
+      color: #d1d5db;
+      padding: 50px 100px 20px;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Left Section */
+    .footer-left {
+      flex: 1 1 300px;
+      margin-bottom: 30px;
+    }
+
+    .footer-left h2 {
+      display: flex;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .footer-left h2 i {
+      background: #2563eb;
+      color: #fff;
+      font-size: 20px;
+      padding: 8px;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+
+    .footer-left p {
+      color: #9ca3af;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 12px;
+      font-size: 18px;
+      color: #e5e7eb;
+      background: #1f2937;
+      padding: 10px 12px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      background: #2563eb;
+      color: #fff;
+    }
+
+    /* Links Section */
+    .footer-links {
+      display: flex;
+      flex: 2;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .footer-column {
+      min-width: 180px;
+      margin-bottom: 30px;
+    }
+
+    .footer-column h3 {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-column ul li a {
+      text-decoration: none;
+      color: #9ca3af;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .footer-column ul li a:hover {
+      color: #fff;
+    }
+
+    /* Bottom Section */
+    .footer-bottom {
+      border-top: 1px solid #1f2937;
+      margin-top: 30px;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 14px;
+      color: #9ca3af;
+    }
+
+    .footer-bottom a {
+      color: #9ca3af;
+      margin-left: 15px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .footer-bottom a:hover {
+      color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+      }
+      .footer-links {
+        flex-direction: column;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      
+      <!-- Left Section -->
+      <div class="footer-left">
+        <p>Empowering IT students with expert project assistance, code reviews, and technical guidance to achieve academic excellence.</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/projectpathshala.official?utm_source=qr&igsh=c2M5M25qc3czdHRi"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/1GkS6qSCS8/"><i class="fab fa-facebook"></i></a>
+          <a href="https://youtube.com/@projectpathshala.official?si=aCLbQFPVUTVmts8i"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">Project Development</a></li>
+            <li><a href="#">Code Review</a></li>
+            <li><a href="#">Debugging Help</a></li>
+            <li><a href="#">Technical Consultation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick links</h3>
+          <ul>
+            <li><a href="Homepage.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="Team.html">Team</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-section contact">
+      <h3>Contact Us</h3>
+      <p>Email: <a href="mailto:project.pathshala.edu@gmail.com">project.pathshala.edu@gmail.com</a></p>
+      <p>Ahmedabad, India</p>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <p>© 2025 ProjectPathshala. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

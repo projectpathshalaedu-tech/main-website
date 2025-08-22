@@ -1,0 +1,1441 @@
+<html>
+    <body>
+    <head>
+<style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5%;
+      background: #fff;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #111;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .logo span {
+      color: #fff;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: #2563eb;
+    }
+
+    .btn-nav {
+      background: #2563eb;
+      color: #fff;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn-nav:hover {
+      background: #1e4ed8;
+    }
+body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Hero section */
+    .team-section {
+      background-image: url('Team.avif');
+      background-size: cover;
+      background-position: center;
+      color: #000;
+      po
+
+ body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Hero section */
+    .team-section {
+      background-image: url('Team.avif');
+      background-size: cover;
+      background-position: center;
+      color: #000;
+      position: relative;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .team-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.6);
+      z-index: 1;
+    }
+
+    .team-content {
+      text-align: center;
+      z-index: 2;
+      max-width: 800px;
+      padding: 20px;
+    }
+
+    .team-content h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .team-content p {
+      font-size: 20px;
+      color: #333;
+    }
+
+    /* Stats */
+    .stats-section {
+      padding: 60px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .stats-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      max-width: 1200px;
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .stat-box {
+      width: 200px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .icon-circle {
+      width: 100px;
+      height: 100px;
+      background-color: #d5e2ff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .icon-circle img {
+      width: 40px;
+      height: 40px;
+      display: block;
+    }
+
+    .stat-number {
+      font-size: 32px;
+      font-weight: 700;
+      color: #000;
+      margin: 0 0 8px 0;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 16px;
+      color: #444;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .stat-box { width: 45%; }
+    }
+
+    @media (max-width: 480px) {
+      .stat-box { width: 100%; }
+    }
+
+    /* Profile Cards */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .profile-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 24px;
+    }
+
+    .profile-card h2 {
+      margin: 0 0 5px;
+      font-size: 22px;
+      text-align: center;
+    }
+
+    .profile-card .title {
+      color: #3366cc;
+      font-weight: 500;
+      margin-bottom: 10px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .profile-card .experience {
+      color: #777;
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .specialties {
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    .specialties span {
+      display: inline-block;
+      background-color: #e8f0ff;
+      color: #3366cc;
+      padding: 6px 12px;
+      margin: 4px;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-top: 16px;
+      margin-bottom: 6px;
+    }
+
+    .education,
+    .achievements {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .profile-card ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    .profile-card ul li {
+      margin-bottom: 6px;
+    }
+
+    .check {
+      color: green;
+      margin-right: 6px;
+    }
+
+    /* Why Our Team Excels */
+    .why-section {
+  padding: 60px 20px;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+.why-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.why-section p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.why-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.why-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center; /* Center everything inside */
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.why-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #eef2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px auto; /* Centers the image wrapper */
+  overflow: hidden;
+}
+
+.why-img img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.why-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.why-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+  .approach-section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .approach-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .approach-header h2 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .approach-header p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    .approach-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+    }
+
+    .step-number {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .step-content h3 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .step-content p {
+      margin: 5px 0 0;
+      font-size: 15px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* Different colors for numbers */
+    .step:nth-child(1) .step-number { background: #e0e7ff; color: #1d4ed8; }
+    .step:nth-child(2) .step-number { background: #d1fae5; color: #065f46; }
+    .step:nth-child(3) .step-number { background: #ede9fe; color: #5b21b6; }
+    .step:nth-child(4) .step-number { background: #fef3c7; color: #92400e; }
+
+    .approach-image img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .approach-container {
+        grid-template-columns: 1fr;
+      }
+    }
+     .cta-section {
+      background: #2563eb;
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .cta-section h2 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .cta-section p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #e5e7eb;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .cta-buttons a {
+      padding: 14px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .cta-buttons a.primary {
+      background: #fff;
+      color: #2563eb;
+    }
+
+    .cta-buttons a.primary:hover {
+      background: #f3f4f6;
+    }
+
+    .cta-buttons a.secondary {
+      border: 2px solid #fff;
+      color: #fff;
+    }
+
+    .cta-buttons a.secondary:hover {
+      background: #1e40af;
+      border-color: #1e40af;
+    }
+    /* Footer Styling */
+    footer {
+      background-color: #0b1623; /* professional dark navy */
+      color: #d1d5db;
+      padding: 50px 100px 20px;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Left Section */
+    .footer-left {
+      flex: 1 1 300px;
+      margin-bottom: 30px;
+    }
+
+    .footer-left h2 {
+      display: flex;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .footer-left h2 i {
+      background: #2563eb;
+      color: #fff;
+      font-size: 20px;
+      padding: 8px;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+
+    .footer-left p {
+      color: #9ca3af;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 12px;
+      font-size: 18px;
+      color: #e5e7eb;
+      background: #1f2937;
+      padding: 10px 12px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      background: #2563eb;
+      color: #fff;
+    }
+
+    /* Links Section */
+    .footer-links {
+      display: flex;
+      flex: 2;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .footer-column {
+      min-width: 180px;
+      margin-bottom: 30px;
+    }
+
+    .footer-column h3 {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-column ul li a {
+      text-decoration: none;
+      color: #9ca3af;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .footer-column ul li a:hover {
+      color: #fff;
+    }
+
+    /* Bottom Section */
+    .footer-bottom {
+      border-top: 1px solid #1f2937;
+      margin-top: 30px;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 14px;
+      color: #9ca3af;
+    }
+
+    .footer-bottom a {
+      color: #9ca3af;
+      margin-left: 15px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .footer-bottom a:hover {
+      color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+      }
+      .footer-links {
+        flex-direction: column;
+        text-align: left;
+      }
+    }
+    
+    position:relative;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .team-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.6);
+      z-index: 1;
+    }
+
+    .team-content {
+      text-align: center;
+      z-index: 2;
+      max-width: 800px;
+      padding: 20px;
+    }
+
+    .team-content h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .team-content p {
+      font-size: 20px;
+      color: #333;
+    }
+
+    /* Stats */
+    .stats-section {
+      padding: 60px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .stats-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      max-width: 1200px;
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .stat-box {
+      width: 200px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .icon-circle {
+      width: 100px;
+      height: 100px;
+      background-color: #d5e2ff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .icon-circle img {
+      width: 40px;
+      height: 40px;
+      display: block;
+    }
+
+    .stat-number {
+      font-size: 32px;
+      font-weight: 700;
+      color: #000;
+      margin: 0 0 8px 0;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 16px;
+      color: #444;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .stat-box { width: 45%; }
+    }
+
+    @media (max-width: 480px) {
+      .stat-box { width: 100%; }
+    }
+
+    /* Profile Cards */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .profile-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 24px;
+    }
+
+    .profile-card h2 {
+      margin: 0 0 5px;
+      font-size: 22px;
+      text-align: center;
+    }
+
+    .profile-card .title {
+      color: #3366cc;
+      font-weight: 500;
+      margin-bottom: 10px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .profile-card .experience {
+      color: #777;
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .specialties {
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    .specialties span {
+      display: inline-block;
+      background-color: #e8f0ff;
+      color: #3366cc;
+      padding: 6px 12px;
+      margin: 4px;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-top: 16px;
+      margin-bottom: 6px;
+    }
+
+    .education,
+    .achievements {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .profile-card ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    .profile-card ul li {
+      margin-bottom: 6px;
+    }
+
+    .check {
+      color: green;
+      margin-right: 6px;
+    }
+
+    /* Why Our Team Excels */
+    .why-section {
+  padding: 60px 20px;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+.why-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.why-section p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.why-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.why-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center; /* Center everything inside */
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.why-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #eef2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px auto; /* Centers the image wrapper */
+  overflow: hidden;
+}
+
+.why-img img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.why-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.why-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+  .approach-section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .approach-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .approach-header h2 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .approach-header p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    .approach-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+    }
+
+    .step-number {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .step-content h3 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .step-content p {
+      margin: 5px 0 0;
+      font-size: 15px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* Different colors for numbers */
+    .step:nth-child(1) .step-number { background: #e0e7ff; color: #1d4ed8; }
+    .step:nth-child(2) .step-number { background: #d1fae5; color: #065f46; }
+    .step:nth-child(3) .step-number { background: #ede9fe; color: #5b21b6; }
+    .step:nth-child(4) .step-number { background: #fef3c7; color: #92400e; }
+
+    .approach-image img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .approach-container {
+        grid-template-columns: 1fr;
+      }
+    }
+     .cta-section {
+      background: #2563eb;
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .cta-section h2 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .cta-section p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #e5e7eb;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .cta-buttons a {
+      padding: 14px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .cta-buttons a.primary {
+      background: #fff;
+      color: #2563eb;
+    }
+
+    .cta-buttons a.primary:hover {
+      background: #f3f4f6;
+    }
+
+    .cta-buttons a.secondary {
+      border: 2px solid #fff;
+      color: #fff;
+    }
+
+    .cta-buttons a.secondary:hover {
+      background: #1e40af;
+      border-color: #1e40af;
+    }
+    /* Footer Styling */
+    footer {
+      background-color: #0b1623; /* professional dark navy */
+      color: #d1d5db;
+      padding: 50px 100px 20px;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Left Section */
+    .footer-left {
+      flex: 1 1 300px;
+      margin-bottom: 30px;
+    }
+
+    .footer-left h2 {
+      display: flex;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .footer-left h2 i {
+      background: #2563eb;
+      color: #fff;
+      font-size: 20px;
+      padding: 8px;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+
+    .footer-left p {
+      color: #9ca3af;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 12px;
+      font-size: 18px;
+      color: #e5e7eb;
+      background: #1f2937;
+      padding: 10px 12px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      background: #2563eb;
+      color: #fff;
+    }
+
+    /* Links Section */
+    .footer-links {
+      display: flex;
+      flex: 2;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .footer-column {
+      min-width: 180px;
+      margin-bottom: 30px;
+    }
+
+    .footer-column h3 {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-column ul li a {
+      text-decoration: none;
+      color: #9ca3af;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .footer-column ul li a:hover {
+      color: #fff;
+    }
+
+    /* Bottom Section */
+    .footer-bottom {
+      border-top: 1px solid #1f2937;
+      margin-top: 30px;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 14px;
+      color: #9ca3af;
+    }
+
+    .footer-bottom a {
+      color: #9ca3af;
+      margin-left: 15px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .footer-bottom a:hover {
+      color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+      }
+      .footer-links {
+        flex-direction: column;
+        text-align: left;
+      }
+    }
+    </style>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expert Team</title>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">      
+      <span style="font-size:22px;"></span> <span><img src="images/Main File (LOGO)-01 copy.jpg" alt="Logo" height="70px" width="250px"></span>
+
+    </div>
+    <ul class="nav-links">
+      <li><a href="Homepage.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="Team.html">Team</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="btn-nav">Get Help</button>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section class="team-section">
+    <div class="team-content">
+      <h1>Meet Our Expert Team</h1>
+      <p>
+        Our team consists of experienced professionals from top tech companies and universities,
+        dedicated to helping students achieve academic excellence in IT and computer science.
+      </p>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-section">
+    <div class="stats-container">
+
+      <div class="stat-box">
+        <div class="icon-circle"><img src="./images/people.png" alt="Team Members" /></div>
+        <div class="stat-number">4</div>
+        <div class="stat-label">Expert Team Members</div>
+      </div>
+
+      <div class="stat-box">
+        <div class="icon-circle"><img src="./images/Time.png" alt="Experience" /></div>
+        <div class="stat-number">2+</div>
+        <div class="stat-label">Years Combined Experience</div>
+      </div>
+
+      <div class="stat-box">
+        <div class="icon-circle"><img src="./images/graduation.png" alt="Students Helped" /></div>
+        <div class="stat-number">10+</div>
+        <div class="stat-label">Students Helped</div>
+      </div>
+
+      <div class="stat-box">
+        <div class="icon-circle"><img src="./images/Trophy.png  " alt="Success Rate" /></div>
+        <div class="stat-number">95%</div>
+        <div class="stat-label">Success Rate</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Profiles -->
+  <div class="container">
+    <!-- (Profiles remain same as your code) -->
+    <!-- Profile 1 -->
+    <div class="profile-card">
+      <h2>Mansuri Humera </h2>
+      <div class="title">Founderr</div>
+      <div class="experience">🕒 2+ years</div>
+      <div class="section-title">Specialties:</div>
+      <div class="specialties">
+        <span>Web Development</span>
+        <span>Hosting & Domain</span>
+        <span>AI</span>
+      </div>
+      <div class="section-title">Education:</div>
+      <div class="education">
+      Bachlor Of Computer Application - LJ University<br>
+       
+      </div>
+      <div class="section-title">Key Achievements:</div>
+      <ul class="achievements">
+        <li><span class="check">✔</span>Founded & Scales Project Pathshala</li>
+        <li><span class="check">✔</span>10+ Successful Projects Delivered</li>
+        <li><span class="check">✔</span> 15+ Student Guided</li>
+      </ul>
+    </div>
+
+    <!-- Profile 2 -->
+    <div class="profile-card">
+      <h2>Mansuri Ayesha</h2>
+      <div class="title">Web Developer</div>
+      <div class="experience">🕒 1+ years</div>
+      <div class="section-title">Specialties:</div>
+      <div class="specialties">
+        <span>Full Stack Developer</span>
+        <span>Machine Learning </span>
+        <span>Python</span>
+      </div>
+      <div class="section-title">Education:</div>
+      <div class="education">
+        Bachlor Of Computer Application - Shreyarth University<br>
+       
+      </div>
+      <div class="section-title">Key Achievements:</div>
+      <ul class="achievements">
+        <li><span class="check">✔</span>Mentored 10+ Students</li>
+        <li><span class="check">✔</span> Built Web Applications</li>
+        <li><span class="check">✔</span>Soeciality</li>
+      </ul>
+    </div>
+
+    <!-- Profile 3 -->
+    <div class="profile-card">
+      <h2>Mansuri Hunaina</h2>
+      <div class="title">Web Developer</div>
+      <div class="experience">🕒 1+ years</div>
+      <div class="section-title">Specialties:</div>
+      <div class="specialties">
+        <span>Web Development</span>
+        <span>Java </span>
+        <span>Python</span>
+      </div>
+      <div class="section-title">Education:</div>
+      <div class="education">
+         Bachlor Of Computer Application - Shreyarth University<br>
+        
+      </div>
+      <div class="section-title">Key Achievements:</div>
+      <ul class="achievements">
+        <li><span class="check">✔</span> Developed  Major Projects</li>
+        <li><span class="check">✔</span> Gained 1+ Experience Web Development </li>
+        <li><span class="check">✔</span> Guided 5+ Students</li>
+      </ul>
+    </div>
+
+    <!-- Profile 4 -->
+    <div class="profile-card">
+      <h2>Diya Saiyed</h2>
+      <div class="title">Web Desinger</div>
+      <div class="experience">🕒 1+ years</div>
+      <div class="section-title">Specialties:</div>
+      <div class="specialties">
+        <span>Frontend Developer</span>
+        <span>Python</span>
+        <span>PHP</span>
+      </div>
+      <div class="section-title">Education:</div>
+      <div class="education">
+         Bachlor Of Computer Application - Shreyarth Universityi<br>
+       
+      </div>
+      <div class="section-title">Key Achievements:</div>
+      <ul class="achievements">
+        <li><span class="check">✔</span> Developed Working  Prototype of Webstite</li>
+        <li><span class="check">✔</span>  Certified  as Data Analytics & AI By Adani</li>
+        <li><span class="check">✔</span>Contributed to team projects </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Why Our Team Excels -->
+  <section class="why-section">
+    <h2>Why Our Team Excels</h2>
+    <p>Our unique combination of industry experience and academic expertise sets us apart</p>
+    <div class="why-cards">
+
+      <div class="why-card">
+        <div class="why-img"><img src="./images/industry.png" alt="Project Expertise"></div>
+        <h3>Project Expertise</h3>
+        <p>Our team has delivered 100+ successful IT projects across web, app, and AI domains, giving students hands-on industry experience.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-img"><img src="./images/graduate (1).png" alt="Academic Excellence"></div>
+        <h3>Academic Excellence</h3>
+        <p>With advanced degrees from top universities, our experts understand academic requirements and grading criteria perfectly.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-img"><img src="./images/heart.png" alt="Passion for Teaching"></div>
+        <h3>Passion for Teaching</h3>
+        <p>Every team member is passionate about education and committed to helping students learn, not just complete assignments.</p>
+      </div>
+
+    </div>
+  </section>
+  <section class="approach-section">
+    <div class="approach-header">
+      <h2>Our Approach</h2>
+      <p>How we ensure every student gets the best possible learning experience</p>
+    </div>
+
+    <div class="approach-container">
+      <!-- Steps -->
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Understanding First</h3>
+            <p>We take time to understand your specific requirements, learning objectives, and academic context before starting any project.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Collaborative Development</h3>
+            <p>We work with you throughout the process, explaining concepts and ensuring you understand every aspect of the solution.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Knowledge Transfer</h3>
+            <p>Every deliverable includes comprehensive documentation and explanations to enhance your learning experience.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Ongoing Support</h3>
+            <p>We provide continued support even after project completion to help with presentations and follow-up questions.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="approach-image">
+        <img src="images/work.jpeg" alt="Team Working">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      
+      <!-- Left Section -->
+      <div class="footer-left">
+        <p>Empowering IT students with expert project assistance, code reviews, and technical guidance to achieve academic excellence.</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/projectpathshala.official?utm_source=qr&igsh=c2M5M25qc3czdHRi"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/1GkS6qSCS8/"><i class="fab fa-facebook"></i></a>
+          <a href="https://youtube.com/@projectpathshala.official?si=aCLbQFPVUTVmts8i"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">Project Development</a></li>
+            <li><a href="#">Code Review</a></li>
+            <li><a href="#">Debugging Help</a></li>
+            <li><a href="#">Technical Consultation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick links</h3>
+          <ul>
+            <li><a href="Homepage.html">About us</a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="Team.html">Team</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-section contact">
+      <h3>Contact Us</h3>
+      <p>Email: <a href="mailto:project.pathshala.edu@gmail.com">project.pathshala.edu@gmail.com</a></p>
+      <p>Ahmedabad, India</p>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <p>© 2025 ProjectPathshala. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

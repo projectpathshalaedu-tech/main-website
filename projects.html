@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Projects</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9fbfd;
+      color: #333;
+    }
+   /* Header */
+    header {
+      background: rgba(0, 0, 0, 0);
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: white;
+    }
+
+    header nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color:black;
+      font-weight: bold;
+    }
+
+    header .btn {
+      background: #2563eb;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem 8%;
+      background: linear-gradient(135deg, #f9f9f9, #ffffff);
+    }
+    .hero-text {
+      max-width: 50%;
+      margin-left: 300px;
+      text-align: center;
+    }
+    .hero-text h1 {
+      font-size: 3rem;
+      color: #111;
+      margin-bottom: 1rem;
+    }
+    .hero-text p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      color: #555;
+    }
+    .hero-text button {
+      padding: 0.8rem 1.6rem;
+      font-size: 1rem;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .hero-text button:hover {
+      background: #1e40af;
+    }
+    .hero img {
+      max-width: 420px;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Cards Grid */
+    .container {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 20px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem 1.2rem;
+    }
+    .card-content .icon {
+      font-size: 1.8rem;
+      margin-bottom: 0.6rem;
+    }
+    .card-content h3 {
+      margin: 0.5rem 0;
+      font-size: 1.3rem;
+      color: #111;
+    }
+    .card-content p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+    .tags {
+      margin: 0.5rem 0;
+    }
+    .tag {
+      display: inline-block;
+      background: #eff6ff;
+      color: #2563eb;
+      font-size: 0.8rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 6px;
+      margin: 2px;
+    }
+    .technologies {
+      margin: 0.8rem 0;
+    }
+    .technologies span {
+      background: #f3f4f6;
+      padding: 0.3rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      margin: 2px;
+    }
+    .client {
+      font-size: 0.85rem;
+      color: #444;
+      margin-top: 0.6rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <span style="font-size:22px;"><img src="images/Main File (LOGO)-01 copy.jpg" alt="Logo" height="70px" width="250px"></span>
+    </div>
+    <nav>
+      <a href="Homepage.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="#">Projects</a>
+      <a href="Team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="#" class="btn">Get Help</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Showcasing Best Projects 🚀</h1>
+      <p>Explore my latest web, mobile, and cloud projects built with modern technologies. Each project highlights creativity, performance, and innovation.</p>
+
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <div class="container">
+    <div class="cards">
+      
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="card-content">
+          <div class="icon">💻</div>
+          <h3>E-Commerce Web Platform</h3>
+          <p>Full-stack e-commerce platform with payment integration, user management, and admin dashboard.</p>
+          <div class="tags">
+            <span class="tag">User Authentication</span>
+            <span class="tag">Payment Gateway</span>
+            <span class="tag">Inventory</span>
+            <span class="tag">Responsive</span>
+          </div>
+          <div class="technologies">
+            <span>React</span><span>Node.js</span><span>MongoDB</span><span>Stripe</span>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="card-content">
+          <div class="icon">📱</div>
+          <h3>Task Management Mobile App</h3>
+          <p>Cross-platform mobile app for task management with real-time sync and collaboration.</p>
+          <div class="tags">
+            <span class="tag">Real-time Sync</span>
+            <span class="tag">Team Collaboration</span>
+            <span class="tag">Push Notifications</span>
+          </div>
+          <div class="technologies">
+            <span>React Native</span><span>Firebase</span><span>Redux</span>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="card-content">
+          <div class="icon">🗄️</div>
+          <h3>University Database System</h3>
+          <p>Comprehensive student management system with enrollment, grade tracking, and reporting.</p>
+          <div class="tags">
+            <span class="tag">Student Records</span>
+            <span class="tag">Course Management</span>
+            <span class="tag">Report Generation</span>
+          </div>
+          <div class="technologies">
+            <span>MySQL</span><span>PHP</span><span>Bootstrap</span>
+          </div>
+         
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="card-content">
+          <div class="icon">🤖</div>
+          <h3>IoT Smart Home Dashboard</h3>
+          <p>IoT-based web dashboard to control and monitor smart home devices remotely.</p>
+          <div class="tags">
+            <span class="tag">Real-time Monitoring</span>
+            <span class="tag">Device Control</span>
+          </div>
+          <div class="technologies">
+            <span>Python</span><span>Flask</span><span>MQTT</span>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card">
+        <div class="card-content">
+          <div class="icon">🔒</div>
+          <h3>Cybersecurity Threat Analyzer</h3>
+          <p>Dashboard for analyzing, tracking, and reporting security threats in real-time.</p>
+          <div class="tags">
+            <span class="tag">Threat Detection</span>
+            <span class="tag">Log Analysis</span>
+          </div>
+          <div class="technologies">
+            <span>Django</span><span>PostgreSQL</span><span>Chart.js</span>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card">
+        <div class="card-content">
+          <div class="icon">☁️</div>
+          <h3>Cloud Storage App</h3>
+          <p>Cloud application to securely upload, manage, and share files online.</p>
+          <div class="tags">
+            <span class="tag">File Upload</span>
+            <span class="tag">Secure Access</span>
+          </div>
+          <div class="technologies">
+            <span>AWS</span><span>React</span><span>Node.js</span>
+          </div>
+         
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="card">
+        <div class="card-content">
+          <div class="icon">🏥</div>
+          <h3>Healthcare Prediction System</h3>
+          <p>Machine learning model integrated with web app for disease prediction.</p>
+          <div class="tags">
+            <span class="tag">Heart Disease</span>
+            <span class="tag">Diabetes</span>
+          </div>
+          <div class="technologies">
+            <span>Python</span><span>Flask</span><span>ML</span>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="card">
+        <div class="card-content">
+          <div class="icon">⛓️</div>
+          <h3>Blockchain Voting System</h3>
+          <p>Decentralized application for secure and transparent online voting.</p>
+          <div class="tags">
+            <span class="tag">Transparency</span>
+            <span class="tag">Security</span>
+          </div>
+          <div class="technologies">
+            <span>Ethereum</span><span>Solidity</span><span>React</span>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Example</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #0b1623; /* professional dark navy */
+      color: #d1d5db;
+      padding: 50px 100px 20px;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Left Section */
+    .footer-left {
+      flex: 1 1 300px;
+      margin-bottom: 30px;
+    }
+
+    .footer-left h2 {
+      display: flex;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .footer-left h2 i {
+      background: #2563eb;
+      color: #fff;
+      font-size: 20px;
+      padding: 8px;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+
+    .footer-left p {
+      color: #9ca3af;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 12px;
+      font-size: 18px;
+      color: #e5e7eb;
+      background: #1f2937;
+      padding: 10px 12px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      background: #2563eb;
+      color: #fff;
+    }
+
+    /* Links Section */
+    .footer-links {
+      display: flex;
+      flex: 2;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .footer-column {
+      min-width: 180px;
+      margin-bottom: 30px;
+    }
+
+    .footer-column h3 {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-column ul li a {
+      text-decoration: none;
+      color: #9ca3af;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .footer-column ul li a:hover {
+      color: #fff;
+    }
+
+    /* Bottom Section */
+    .footer-bottom {
+      border-top: 1px solid #1f2937;
+      margin-top: 30px;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 14px;
+      color: #9ca3af;
+    }
+
+    .footer-bottom a {
+      color: #9ca3af;
+      margin-left: 15px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .footer-bottom a:hover {
+      color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+      }
+      .footer-links {
+        flex-direction: column;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      
+      <!-- Left Section -->
+      <div class="footer-left">
+        <p>Empowering IT students with expert project assistance, code reviews, and technical guidance to achieve academic excellence.</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/projectpathshala.official?utm_source=qr&igsh=c2M5M25qc3czdHRi"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/1GkS6qSCS8/"><i class="fab fa-facebook"></i></a>
+          <a href="https://youtube.com/@projectpathshala.official?si=aCLbQFPVUTVmts8i"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">Project Development</a></li>
+            <li><a href="#">Code Review</a></li>
+            <li><a href="#">Debugging Help</a></li>
+            <li><a href="#">Technical Consultation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick links</h3>
+          <ul>
+            <li><a href="Homepage.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="Team.html">Team</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-section contact">
+      <h3>Contact Us</h3>
+      <p>Email: <a href="mailto:project.pathshala.edu@gmail.com">project.pathshala.edu@gmail.com</a></p>
+      <p>Ahmedabad, India</p>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <p>© 2025 ProjectPathshala. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
